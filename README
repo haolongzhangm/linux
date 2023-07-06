@@ -26,7 +26,7 @@ check rootfs/ubuntu_22.04_arm64/build.md
 ```
 source ./aarch64_env_export
 make defconfig
-bear make -j16
+bear -- make -j32
 ```
 # start vm with qemu
 ```

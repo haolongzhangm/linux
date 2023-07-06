@@ -2,4 +2,5 @@
 export CROSS_COMPILE=aarch64-linux-gnu-
 export ARCH=arm64
 echo "use make defconfig to update config to .config"
+echo "use bear -- make -j32 to get compile database"
 echo "read: rootfs/ubuntu_22.04_arm64/build.md to get base sysmem img"
