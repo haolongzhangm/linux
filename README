@@ -23,12 +23,13 @@ the problems which may result by upgrading your kernel.
 check rootfs/ubuntu_22.04_arm64/build.md
 
 # init env
-```
 source ./aarch64_env_export
 make defconfig
 bear -- make -j32
-```
+then call make_compile_commands_work_with_clangd.sh to make
+compile_commands.json work with clangd
+
 # start vm with qemu
-```
 ./start_qemu.py -h
-```
+if you want to use gdb, you need to start with -g
+
